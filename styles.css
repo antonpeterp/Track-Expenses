@@ -1,0 +1,87 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Times New Roman", Times, serif;
+}
+.left-container {
+  border: 2px solid;
+  padding: 40px 15%;
+  display: flex;
+  flex-direction: column;
+  width: 10%;
+  gap: 14px;
+  font-size: 34px;
+  margin: 30px;
+}
+#trackbtn {
+  font-size: 18px;
+  padding: 10px;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+  border: 0;
+  border-radius: 16px;
+}
+#trackbtn:hover {
+  background-color: rgb(113, 171, 109);
+  color: black;
+  transition: 0.1s;
+}
+
+#displayuser {
+  border: 2px solid;
+  border-color: black;
+  margin-right: 58%;
+  margin-left: 30px;
+}
+#displayuser h1,
+h2,
+ul {
+  margin: 10px;
+  font-size: 26px;
+  list-style: none;
+}
+
+#delbtn {
+  font-size: 18px;
+  padding: 10px;
+  background-color: rgb(142, 28, 28);
+  color: white;
+  cursor: pointer;
+  margin: 8px;
+  border: 0;
+  border-radius: 12px;
+}
+#delbtn:hover {
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+  transition: 0.1s;
+}
+
+.right-container {
+  position: absolute;
+  right: 100px;
+  top: 60px;
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+  width: 50%;
+}
+
+.bar-chart {
+  width: 100%;
+  height: 50vh;
+}
+.pie-chart {
+  margin-left: 80px;
+  width: 100%;
+  height: 50vh;
+}
+
+canvas {
+  width: 100%;
+  height: 100%;
+}

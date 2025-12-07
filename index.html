@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Track Expenses</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="left-container">
+        <label>Budget</label>
+        <input type="number" id="budget" placeholder="Enter Your Budget" />
+
+        <label>Expenses</label>
+        <input type="text" id="expenses" placeholder="eg: Groceries" />
+
+        <label>Price</label>
+        <input type="number" id="pricetag" placeholder="Price in Numbers" />
+
+        <button id="trackbtn" onclick="starttracker()">Track</button>
+      </div>
+      <div id="displayuser"></div>
+      <div class="right-container">
+        <div class="pie-chart"><canvas id="expensePieChart"></canvas></div>
+        <div class="bar-chart">
+          <canvas id="expenseBarChart"></canvas>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>
